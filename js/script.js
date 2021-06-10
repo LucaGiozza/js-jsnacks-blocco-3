@@ -5,9 +5,24 @@
 // compresa tra i due numeri
 
 
-va array = 
+var numeri = [1, 30, 56, 67, 120, 150];
+
+var x = parseInt(prompt('inserisci un numero minimo 1 e massimo ' + numeri.length));
+var y = parseInt(prompt('inserisci un numero massimo ' + numeri.length));
 
 
+valore(numeri, x, y);
+
+console.log(valore(numeri, x, y));
+
+function valore(array, min, max){
+    var nuovo = [];
+    for (var i = min - 1; i < max; i++ ){
+        nuovo.push(array[i]);
+
+    }
+  return nuovo;
+}
 
 
 
